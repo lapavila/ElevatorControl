@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elevatorControl>
+	<maxFloor>12</maxFloor>
+	<minFloor>-2</minFloor>
+	<numberOfElevators>1</numberOfElevators>
+	<elevatorService>ElevatorServiceImpl</elevatorService>
+</elevatorControl>
