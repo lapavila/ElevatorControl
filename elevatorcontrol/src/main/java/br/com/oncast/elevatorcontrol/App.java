@@ -24,6 +24,7 @@ public class App {
 		boolean isConnected = false;
 		Socket clientSocket = null;
 		List<Thread> engineServicePool = new ArrayList<Thread>();
+		Integer serverPort = 8800;
 		
 		ElevatorService service = ElevatorService.getElevatorService();
 		for (int i : service.getElevatorPool().keySet()) {
@@ -33,9 +34,10 @@ public class App {
 			engineServicePool.add(engineThread);
 		}
 		try{
-			ServerSocket listenSocket = new ServerSocket(8800);
+			ServerSocket listenSocket = new ServerSocket(serverPort);
 			String message = "";
-			System.out.println("Connect via Telnet");
+			System.out.println("Server is up - accepting connections on port " + serverPort);
+			System.out.println("==>> Connect via Telnet");
 			System.out.println("Usage [direction (u)p|(d)own] [floor]");
 			System.out.println("      Example: to up from 4th floor: u 4");
 			while(!message.equalsIgnoreCase("quit")) {
