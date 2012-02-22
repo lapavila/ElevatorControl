@@ -1,1 +1,12 @@
 Projeto realizado em 15/02/2012 para apresentação em entrevista no dia 16/02/2012
+
+Instruções:
+
+Considerando que a VM Java, o maven e o git client estejam devidamente instalados e configurados.
+
+git clone https://github.com/lapavila/ElevatorControl.git
+cd ElevatorControl/elevatorcontrol/
+mvn clean install
+java -jar ./target/elevatorcontrol-0.0.1-SNAPSHOT.jar
+
+abrir outra janela de terminal e conectar via telnet para o envio dos comandos do "sensor de parede"
