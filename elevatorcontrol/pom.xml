@@ -35,8 +35,7 @@
 					<archive>
 						<index>true</index>
 						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
+							<addClasspath>false</addClasspath>
 							<mainClass>br.com.oncast.elevatorcontrol.App</mainClass>
 						</manifest>
 					</archive>
